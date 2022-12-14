@@ -1,4 +1,29 @@
 import random
+import tkinter as tk
+from tkinter import *
+root = tk.Tk()
+
+def rock_button():
+    myLabel = Label(root, text="rock")
+    myLabel.pack
+   
+def paper_button():
+    return computer_pick
+
+def scissors_button():
+    return computer_pick
+    
+computer_pick = tk.Entry 
+
+
+root.config
+options = tk.Entry(root, state = "disabled", width=50, font = ("Arial", 30), text="Pick!")
+options.pack()
+
+tk.Button(root, text="Rock!", font = ("Arial", 20), width=8, command=rock_button).pack()
+tk.Button(root, text="Paper!", font = ("Arial", 20), width=8, command=paper_button).pack()
+tk.Button(root, text="Scissors!", font = ("Arial", 20), width=8, command=scissors_button).pack()
+
 
 user_wins = 1
 computer_wins = 1
@@ -37,3 +62,6 @@ while True:
 print("You won", user_wins, "times.")
 print("The computer won", computer_wins, "times.")
 print("Byebye!")
+
+
+root.mainloop()
